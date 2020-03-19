@@ -25,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<script type="text/javascript" src="js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
+				$(".scroll").click(function(event){
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
@@ -48,7 +48,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<a href="#" class="right_bt" id="activator"><span> </span> </a>
 							</div>
 							 <div class="box" id="box" style="top: -1000px;">
-								 <div class="box_content">        					                         
+								 <div class="box_content">
 									<div class="box_content_center">
 										<div class="form_content">
 											<div class="menu_box_list">
@@ -61,9 +61,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												</ul>
 											</div>
 											<a class="boxclose" id="boxclose"> <span> </span></a>
-										</div>                                  
-									</div> 	
-								</div>  	  
+										</div>
+									</div>
+								</div>
 							</div>
 							<!-- start-click-drop-down-menu -->
 							<!-- start-dropdown -->
@@ -79,13 +79,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									});
 									$(document).ready(function(){
 									//Hide (Collapse) the toggle containers on load
-									$(".toggle_container").hide(); 
+									$(".toggle_container").hide();
 									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
 									$(".trigger").click(function(){
 										$(this).toggleClass("active").next().slideToggle("500");
 											return false; //Prevent the browser jump to the link anchor
 									});
-														
+
 								});
 							</script>
 							<!-- //End-click-drop-down-menu -->
@@ -93,9 +93,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="clearfix"> </div>
 						<div class="head-info">
-							<h1>MODERNO</h1>
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Curabitur eu velit nulla.
+							<h1>AARON ROBINSON</h1>
+							<p> Software Engineer
 							</p>
 							<div class="botton">
 								<a href="#">Get in Touch</a>
@@ -116,22 +115,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="creative"> </div>
 						<h3>We Are Creative</h3>
 						<p>Lorem ipsum dolor sit amet, dicta albucius ne.
-							Nostro gubergren in ius, ea nam vocent 
+							Nostro gubergren in ius, ea nam vocent
 							electram. An verear efficiantur usu
 						</p>
 					</div>
 					<div class="col-md-4 service-grid service-middle">
 						<div class="skills"> </div>
 						<h3>We have Skills</h3>
-						<p>Nostro gubergren in ius, ea nam vocent 
+						<p>Nostro gubergren in ius, ea nam vocent
 							electram. An verear efficiantur.
 						</p>
 					</div>
 					<div class="col-md-4 service-grid service-right">
 						<div class="help"> </div>
 						<h3>We Love To Help</h3>
-						<p>Lorem ipsum dolor sit amet, dicta. Nostro 
-							gubergren in ius, ea nam vocent. An verear 
+						<p>Lorem ipsum dolor sit amet, dicta. Nostro
+							gubergren in ius, ea nam vocent. An verear
 							efficiantur usu
 						</p>
 					</div>
@@ -156,9 +155,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="stories-grid-right">
 						<div class="cross"> </div>
 						<h3>Lorem Ipsum Project</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-							Lorem Ipsum has been the industry's standard dummy text ever since 
-							the 1500s, when an unknown printer took a galley of type and scrambled it 
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since
+							the 1500s, when an unknown printer took a galley of type and scrambled it
 							to make a type specimen book.
 						</p>
 						<div class="botton Project">
@@ -169,7 +168,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<!-- photography -->
 				<div id="gallery" class="photography">
-						<div class="photography-images">	
+						<div class="photography-images">
 							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
 								<img src="images/2.jpg" />
 								<div class="caption">
@@ -218,16 +217,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</a>
 						</div>
 						<div class="clearfix"> </div>
-						
+
 					<!---- Script for gallery Here --->
 					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 						<script type="text/javascript">
 						$(function () {
-							
+
 							var filterList = {
-							
+
 								init: function () {
-								
+
 									// MixItUp plugin
 									// http://mixitup.io
 									$('#portfoliolist').mixitup({
@@ -237,37 +236,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										easing: 'snap',
 										// call the hover effect
 										onMixEnd: filterList.hoverEffect()
-									});				
-								
+									});
+
 								},
-								
+
 								hoverEffect: function () {
-								
+
 									// Simple parallax effect
 									$('#portfoliolist .portfolio').hover(
 										function () {
 											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
 										},
 										function () {
 											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-										}		
-									);				
-								
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+										}
+									);
+
 								}
-					
+
 							};
-							
+
 							// Run the show!
 							filterList.init();
-							
-							
-						});	
+
+
+						});
 						</script>
 						<!--- Gallery Script Ends --->
 						<!-- pop-up-box -->
-						<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+						<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
 						<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 						<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
 						<!-- //pop-up-box -->
@@ -290,9 +289,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							removalDelay: 300,
 							mainClass: 'my-mfp-zoom-in'
 						});
-																						
+
 						});
-				</script>	
+				</script>
 				<!-- Work Ends Here -->
 				</div>
 				<!-- //photography -->
@@ -371,12 +370,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								  			containerID: 'toTop', // fading element id
 											containerHoverID: 'toTopHover', // fading element hover id
 											scrollSpeed: 1200,
-											easingType: 'linear' 
+											easingType: 'linear'
 								 		};
 										*/
-										
+
 										$().UItoTop({ easingType: 'easeOutQuart' });
-										
+
 									});
 								</script>
 									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
